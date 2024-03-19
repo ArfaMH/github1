@@ -1,0 +1,126 @@
+ ***** 1st program *****
+ mkdir foldername eg: mkdir demo
+ cd demo
+ git init
+
+Initialize a new Git repository
+ git status
+
+ create a file 
+ git add demo.txt
+
+To take that file into staging area
+ git commit -m “commiting text file”
+
+Commit the changes to the repository with a meaningful commit message.
+ git config --global user.name “ ” 
+
+To link with git hub account ,git hub username & password
+ git config –global user.email “ ”
+
+Usage: git config –global user.name “[name]”
+Usage: git config –global user.email “[email address]”
+
+This command sets the author name and email address respectively to be used with your
+commits.
+
+***** 2nd Program *****
+Create a new branch named "feature-branch"
+● git branch feature-branch
+
+This command creates a new branch named "feature-branch".
+
+● git checkout feature-branch
+
+This command switches from master branch to feature-branch
+
+Make changes in the "feature-branch"
+
+Commit the changes in "feature-branch"
+
+git add
+
+● git commit -m "Implement new feature in feature-branch"
+
+git checkout master
+
+Merge "feature-branch" into "master"
+
+● git merge feature-branch
+
+***** 3rd Program *****
+
+git branch feature-branch2
+git status
+vi sample.txt
+git add sample.txt
+git checkout feature-branch2
+git log –oneline
+git stash
+git stash list
+git stash show stash@{1}
+git stash apply
+git stash pop
+git stash list
+
+***** 4th program *****
+git clone https://github.com/example/repository.git <destination_directory>
+
+***** 5th program *****
+
+git fetch origin
+git checkout feature-branch
+git rebase master/origin feature-branch (Resolve any conflicts if prompted)
+git add <resolved-file> (Stage each resolved file) 
+git rebase –continue 
+git push -f origin feature-branch
+
+***** 6th program *****
+git commit –m “custom commit message”
+
+***** 7th program *****
+git checkout master
+git tag v1.0
+git tag //it will show v1.0
+git tag –a v1.1 -m “tag for release ver 1.1”
+git show v1.0
+git tag –l “v1.*”
+git push origin v1.0 
+
+***** 8th program *****
+Create folder Git cherry picking
+cd Git cherry picking
+git init
+vi alpha.txt
+git add . | git commit –m “1st commit”
+vi beta.txt
+git add . | git commit –m “2st commit”
+vi gamma.txt
+git add . | git commit –m “3st commit”
+git reflog //It shows all commit history
+git add .
+git status
+git commit –m “all deleted”
+git reflog
+git cherry-pick id //----add commit history id eg:34946d4------
+git log // it show all commit history with commit id
+
+***** 9th program *****
+git log 
+
+// it show all commit history with commit id
+
+git show commitId
+
+***** 10th program *****
+git log --author="shamsiya parveen " --after="2023-01-01" --before="2023-12-31"
+
+***** 11th program *****
+git log -n 5
+
+***** 12th program *****
+Git revert “ID”
+Git log –oneline 
+
+// it shows commit history in oneline
+Git reset –hard head.1
